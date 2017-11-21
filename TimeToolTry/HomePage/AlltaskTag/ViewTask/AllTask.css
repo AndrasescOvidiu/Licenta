@@ -1,0 +1,157 @@
+#navigation{
+	width: 100%;
+	float: left;
+	margin: 0 0 0 0;
+	top:0px;
+	padding: 0px;
+	list-style: none; 
+	background-color: #211a06;
+	border-bottom: 1px solid #ccc; 
+	border-top: 1px solid #ccc; 
+	position: fixed;
+	display: block;
+	margin-left: 0px !important;
+	padding-left: 0px !important;
+	z-index: 1;
+}
+#navigation li {
+	float: left; 
+	
+}	
+#navigation li a{
+	display: block;
+	padding: 8px 15px;
+	text-decoration: none;
+	font-weight: bold;
+	color: #ed8e28;
+	border-right: 0px solid #ffffff;
+	font-size: 20px;
+}
+#navigation li a:hover {
+		color: #c00;
+		background-color: #fff; 
+}
+#log_out_layout{
+	float: right;	
+	list-style: none; 
+}
+body{
+	background-color: #272727;
+	position:absolute;
+	width: 100%;
+	height:100%;
+	
+	margin-left: 0px;
+	
+}
+
+.table_div{
+	width: 100%;
+
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content{
+	display: none;
+	min-width: 250px;
+    z-index: 1;
+	position: absolute;
+	opacity: 1;
+	background-color: #211a06;
+	padding: 0px 0px;
+
+}	
+.dropdown-content a{
+	color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown:hover{
+	display: blocked;
+	color: black;
+    padding: 0px 0px;
+    text-decoration: none;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+table{
+	border-radius: 6px;
+	position: relative;
+	margin-top: 230px;
+	left:0px;
+	background-color: white;
+	
+	
+}
+table tr:nth-child(odd)
+{
+	background-color: #eee;  
+}
+table th
+{
+	padding: 10px;
+	background-color: #ed8e28;
+	
+}
+table tr:nth-child(even)
+{
+	background-color: #bfbfbf;
+}
+
+table td{
+	border-left-side: solid gray 2px;
+	text-align: center; 
+	width: 10em;
+	padding: 1em;
+}
+table tr{
+	height: 1em;
+}
+
+#last_tr{
+	position: relative;
+	height: 3%;
+	border: solid white 10px;
+	background-color: #75726d;
+}
+
+/* update, adaugare */
+.table_details_dropdown{
+	list-style: none;
+	padding: 0px;
+}
+.table_details_dropdown:hover .hidden_details{
+	display: block;
+}
+.hidden_details
+{
+	text-decoration: none;
+	border-radius:4px;
+	border-bottom: 1px solid #ccc; 
+	border-top: 1px solid #ccc; 
+	border-left: 1px solid #ccc; 
+	border-right: 1px solid #ccc; 
+	background-color: #959da1;
+	display: none;
+	text-align: left;
+    z-index: 1;
+	position: absolute;
+}
+.hidden_details: hover{
+    display: blocked;
+}
+.container{
+	
+	position:absolute;
+	left:5%;
+	top:20%;
+	background-color:yellow;
+	
+}

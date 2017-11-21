@@ -1,0 +1,240 @@
+#navigation{
+	width: 100%;
+	float: left;
+	margin: 0 0 0 0;
+	top:0px;
+	padding: 0px;
+	list-style: none; 
+	background-color: #211a06;
+	border-bottom: 1px solid #ccc; 
+	border-top: 1px solid #ccc; 
+	position: fixed;
+	display: block;
+	margin-left: 0px !important;
+	padding-left: 0px !important;
+	z-index: 1;
+}
+#navigation li {
+	float: left; 
+	
+}	
+#navigation li a{
+	display: block;
+	padding: 8px 15px;
+	text-decoration: none;
+	font-weight: bold;
+	color: #ed8e28;
+	border-right: 0px solid #ffffff;
+	font-size: 20px;
+}
+#navigation li a:hover {
+		color: #c00;
+		background-color: #fff; 
+}
+#log_out_layout{
+	float: right;	
+	list-style: none; 
+}
+body{
+	background-color: #272727;
+	position:absolute;
+	width: 100%;
+	height:100%;
+	
+	margin-left: 0px;
+	
+}
+
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content{
+	display: none;
+	min-width: 250px;
+    z-index: 1;
+	position: absolute;
+	opacity: 1;
+	background-color: #211a06;
+	padding: 0px 0px;
+
+}	
+.dropdown-content a{
+	color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown:hover{
+	display: blocked;
+	color: black;
+    padding: 0px 0px;
+    text-decoration: none;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+#selectTeam{
+	text-align: center;
+	position:absolute;
+	top:120px;
+	left:42%;
+}
+#separatorSelect{
+	top: 6px;
+	left: 120%;
+	border-radius: 20px;
+	position: absolute;
+	width: 2px;
+	height:40px;
+	background-color: red;
+}
+#selectorMonth{
+	position: absolute;
+	left:105%;
+	top:0px;
+	width: 200px;
+}
+
+
+
+#diagramAreea{
+	text-align:right;
+	position: absolute;
+	top:200px;
+	left: 50px;
+	background-color:yellow;
+	word-wrap: break-word;
+
+}
+#procents{
+	position: absolute;
+	left:-40px;
+	top:5px;
+}
+#inFootDiv{
+	position:absolute;
+	background-color: #00d631;
+	text-align:right;
+	top:0px;
+	width: 5px;
+	height:323px;
+	z-index:1;
+	
+}
+
+#aplayer1{
+	background-color: #15ff00;
+	position: absolute;
+	top: 20px;
+	left: 30px;
+	width: 20px;
+	height: 298px;
+}
+#downDiv{
+	position:absolute;
+	background-color: #00d631;
+	text-align:left;
+	width: 600px;
+	height:5px;
+	top:318px;
+}
+
+#hr100{
+	position:absolute;
+	top:205px;
+	left: 50px;
+	width: 600px;
+	border-color: #1cf008;
+	border-style:dotted;
+	z-index: 3;
+}
+#hr75{
+	position:absolute;
+	top:280px;
+	left: 50px;
+	width: 600px;
+	border-color: #8bd600;
+	border-style:dotted;
+	z-index: 3;
+}
+#hr50{
+	position:absolute;
+	top:353px;
+	left: 50px;
+	width: 600px;
+	border-color: #e8e400;
+	border-style:dotted;
+	z-index: 3;
+}
+#hr25{
+	position:absolute;
+	top:428px;
+	left: 50px;
+	width: 600px;
+	border-color: #f25b09;
+	border-style:dotted;
+	z-index: 3;
+}
+#showName{
+	position: absolute;
+	display:none;
+	z-index: 4;
+	text-align: center;
+	border-radius: 10px;
+	top: 300px;
+	width: 140px;
+	height: 50px;
+	background-color: #a8a8a8;
+}
+#nameLabel{
+	position: relative;
+	top:5px;
+}
+#fullDetailsContainter{
+	width: 550px;
+	height: 255px;
+	position:absolute;
+	top:550px;
+	left:50px;
+	border-radius:15px;
+	background-color:#ffffff;
+}
+#firstLine{
+	position:relative;
+	left:20px;
+	font-size: 20px;
+}
+#secondLines{
+	position:relative;
+	left:20px;
+	top:5px;
+}
+#tasksDiv{
+	position:relative;
+	left:20px;
+	top:5px;
+}
+#chartPie{
+	top: 130px;
+	background-color: red;
+	position:absolute;
+	left:600px;
+}
+#requestedHour{
+	z-index:20;
+	position:absolute;
+	top: 150px;
+	font-size:20px;
+	width:300px;
+	left:40px;
+}
+#myChart{
+	position:absolute;
+	top:-120px;
+}
+

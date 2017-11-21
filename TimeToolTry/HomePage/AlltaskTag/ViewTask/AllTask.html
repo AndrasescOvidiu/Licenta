@@ -1,0 +1,81 @@
+ 
+  <head> 
+	<title> AllTask </title>
+	<link rel="stylesheet" type="text/css" href="AllTask.css"/>
+	<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+	<script type="text/javascript"></script>
+</head>
+<body>
+	<ul id="navigation">
+			
+				<li class="dropdown"> <a href ="#"> Home </a> </li>
+				
+				<li class="dropdown"> <a href ="#"> Tasks </a> 
+					<ul class="dropdown-content" >
+						<a href ="#"> View Task List </a>
+						<a href ="#"> View All Task </a>
+						<a href ="#"> View All Completed Task </a>
+					</ul>
+				</li>
+				
+				<li class="dropdown"> <a href ="#"> Weekly Report </a> 
+					<ul class="dropdown-content" >
+						<a href ="#"> Add Weekly Report </a>
+						<a href	="#"> View Weekly Report </a>
+						<a href ="#"> Edit Weekly Report </a>
+						<a href ="#"> View Monthly Report </a>
+					</ul>
+				</li>
+				<li class="dropdown"> <a href ="#"> Metrics </a> 
+					<ul class="dropdown-content" >
+						<a href ="#"> Show Metrics </a>
+					</ul>
+				</li>	
+				<li class="dropdown"> <a href ="#"> Help </a> 
+					<ul class="dropdown-content" >
+						<a href ="#"> Download User Manual </a>
+						<a href	="#"> About </a>
+						<a href ="#"> Feedback </a>
+					</ul>
+				</li>
+				
+			 <ul id="log_out_layout"> <li > <a href = "first.html"> Log Out </a> </li> </ul>
+		</ul>	
+   
+
+   <div class="row large-centered">
+        <input type="text" id="search" placeholder="Type to search..." />
+        <table id="table">
+            <thead>
+               <tr  >
+					<th style="width:7%">Task ID </th> <th> Task Name </th> <th> Project </th> <th class="zile"> Mo </th> <th class="zile"> Tu </th> <th class="zile"> We </th><th class="zile">Th </th> <th class="zile">Fr </th> <th class="status"> Status </th> <th> End date </th> <th>Details</th> <th class="del_edit_spacing"> Delete </th > <th class="del_edit_spacing"> Edit </th>
+				</tr>
+            </thead>
+            <tbody>
+            <tr>
+					
+            </tbody>
+			<tr id="last_tr" cellspacing ="100px">
+						<td id="task_id_search" colspan ="2"> Task ID:
+						</td>
+					<td colspan="8" class="padding_class" > <p id="date_time"> Date: .. </p > </td>
+					<td colspan="3"> 235/260 Productive Hours </td>
+				</tr>
+        </table>
+		
+    </div>
+	           
+  <script>
+    $("#search").keyup(function(){
+        _this = this;
+        // Show only matching TR, hide rest of them
+        $.find($("#table tbody tr"), function() {
+            if($(this).text().toLowerCase().indexOf($(_this).val().toLowerCase()) === -1)
+               $(this).hide();
+            else
+               $(this).show();                
+        });
+    }); 
+	</script>
+</body>
+	
