@@ -46,7 +46,8 @@
 	
 	<?php
 	$browserAgent = $_SERVER['HTTP_USER_AGENT'];
-	$pos = strpos($browserAgent,"MSIE");
+	//$pos = strpos($browserAgent,"/MSIE/i");
+   $pos= preg_match('/(?i)msie [10]/',$_SERVER['HTTP_USER_AGENT'])
 	if($pos==false)
 	{
 		?>
